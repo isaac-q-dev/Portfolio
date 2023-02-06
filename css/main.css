@@ -379,7 +379,7 @@ hr.new4 {
 }
 
 .footer {
-  mix-blend-mode:luminosity;
+  mix-blend-mode: luminosity;
 }
 
 .flex-col {
@@ -542,10 +542,6 @@ hr {
 
 .DB-p-text {
   --n: 30;
-}
-
-.DB-Section {
-  max-width: 700px;
 }
 
 .DB-Section h3 {
@@ -857,6 +853,11 @@ textarea {
   cursor: pointer;
   vertical-align: middle;
   margin: 5px 3px;
+}
+
+.btn-flexed {
+  max-height: 150px;
+  margin: auto !important;
 }
 
 .btn-secondary {

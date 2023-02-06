@@ -1,30 +1,74 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   //Desktop navigation tabs
-  document.getElementById("experience-tab-desktop").addEventListener("click", () => { openTopic(event, 'Experience', 'portfolio') });
-  document.getElementById("techstack-tab-desktop").addEventListener("click", () => { openTopic(event, 'TechStack', 'portfolio') });
-  document.getElementById("projects-tab-desktop").addEventListener("click", () => { openTopic(event, 'Projects', 'portfolio') });
-  document.getElementById("education-tab-desktop").addEventListener("click", () => { openTopic(event, 'Education', 'portfolio') });
-  document.getElementById("info-navigation-text").addEventListener("click", () => { openTopic(event, 'Info', 'aboutme') });
-  document.getElementById("contact-navigation-text").addEventListener("click", () => { openTopic(event, 'Contact', 'aboutme') });
+  document
+    .getElementById("experience-tab-desktop")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Experience", "portfolio");
+    });
+  document
+    .getElementById("techstack-tab-desktop")
+    .addEventListener("click", (event) => {
+      openTopic(event, "TechStack", "portfolio");
+    });
+  document
+    .getElementById("projects-tab-desktop")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Projects", "portfolio");
+    });
+  document
+    .getElementById("education-tab-desktop")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Education", "portfolio");
+    });
+  document
+    .getElementById("info-navigation-text")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Info", "aboutme");
+    });
+  document
+    .getElementById("contact-navigation-text")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Contact", "aboutme");
+    });
   //Mobile navigation tabs
-  document.getElementById("experience-tab-mobile").addEventListener("click", () => { openTopic(event, 'Experience', 'portfolio') });
-  document.getElementById("techstack-tab-mobile").addEventListener("click", () => { openTopic(event, 'TechStack', 'portfolio') });
-  document.getElementById("projects-tab-mobile").addEventListener("click", () => { openTopic(event, 'Projects', 'portfolio') });
-  document.getElementById("education-tab-mobile").addEventListener("click", () => { openTopic(event, 'Education', 'portfolio') });
+  document
+    .getElementById("experience-tab-mobile")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Experience", "portfolio");
+    });
+  document
+    .getElementById("techstack-tab-mobile")
+    .addEventListener("click", (event) => {
+      openTopic(event, "TechStack", "portfolio");
+    });
+  document
+    .getElementById("projects-tab-mobile")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Projects", "portfolio");
+    });
+  document
+    .getElementById("education-tab-mobile")
+    .addEventListener("click", (event) => {
+      openTopic(event, "Education", "portfolio");
+    });
 
   //Buttons to redirect client
-  document.getElementById("tradium-btn").addEventListener("click", () => {location.href='https://github.com/IsaacQ785/2023TAWebsite'})
-  document.getElementById("load-grades-warwick-btn").addEventListener("click", () => {showGrades(event)})
-
+  document.getElementById("tradium-btn").addEventListener("click", (event) => {
+    location.href = "https://github.com/IsaacQ785/2023TAWebsite";
+  });
+  document
+    .getElementById("load-grades-warwick-btn")
+    .addEventListener("click", (event) => {
+      showGrades(event);
+    });
 });
 
 function showGrades(evt) {
-  let tabcontent = document.getElementById('year-1');
+  let tabcontent = document.getElementById("year-1");
   tabcontent.className = "flex-col";
-  let tabcontent2 = document.getElementById('hidden-warwick-content');
+  let tabcontent2 = document.getElementById("hidden-warwick-content");
   tabcontent2.className = "";
   evt.currentTarget.className += " hidden";
-
 }
 
 function openTopic(evt, topicName, section) {
@@ -33,7 +77,7 @@ function openTopic(evt, topicName, section) {
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName(section + "_tabcontent");
-  console.log(tabcontent)
+  console.log(tabcontent);
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }

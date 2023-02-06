@@ -189,7 +189,7 @@
               <p class="typewriter DB-p-text">London, England</p>
               <p class="muted">Jul 2022 - Present</p>
               <div class="flex-row">
-                <div style="flex-grow: 1; width: 50% !important">
+                <div class="DB-row-container">
                   <div class="DB-Section">
                     <h3>
                       Graduate TDI Analyst at Deutsche Bank in both IB & CB Tech
@@ -205,7 +205,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="DB-text-container">
+                    <div>
                       <p>
                         I joined IB Tech as a fullstack developer, and my main
                         priority was building new services.
@@ -230,19 +230,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="DB-row-container">
+                <div class="DB-row-container flex-row">
                   <img
                     class="DB-system-architecture"
                     src="img/tech-stack.png"
                     alt="System Architecture Diagram"
                   />
+                  <a
+                    id="DB-hosted-system-architecture"
+                    class="btn btn-outline-light btn-flexed"
+                    href="img/tech-stack.png"
+                    target="_blank"
+                  >
+                    System Architecture Diagram
+                  </a>
                 </div>
-                <button
-                  id="DB-hosted-system-architecture"
-                  class="btn btn-outline-light"
-                >
-                  System Architecture Diagram
-                </button>
               </div>
               <p class="typewriter DB-p-text">
                 Software Engineer Summer Internship
@@ -251,8 +253,8 @@
               <p class="muted">Jun 2021 - Aug 2021</p>
               <div class="flex-row flex-wrap-wrap">
                 <div class="flex-col">
-                  <div class="DB-Section DB-row-container">
-                    <div class="DB-text-container">
+                  <div class="DB-Section">
+                    <div>
                       <h4 class="typewriter">Symphony Chatbot</h4>
                       <p>
                         My Team needed a chat based tool that allowed them to
@@ -283,10 +285,10 @@
               </p>
               <p class="typewriter DB-p-text">London, England</p>
               <p class="muted">Apr 2020</p>
-              <div class="flex-row flex-wrap-wrap">
+              <div class="flex-wrap-wrap">
                 <div class="flex-col">
                   <div class="DB-Section">
-                    <div class="DB-text-container circleBullets">
+                    <div class="circleBullets">
                       <p>
                         During this 2 day virtual programme, we learnt about the
                         different pillars of banking. We engaged in various
@@ -379,15 +381,15 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="tech-icon-con">
-                  <div>
-                    <img src="img/tech-icons/c.png" class="tech-icon" />
-                    <h4>C</h4>
-                    <p class="muted">
-                      I used C at university for a course on mathematical
-                      modelling in physics
-                    </p>
+                  <div class="tech-icon-con">
+                    <div>
+                      <img src="img/tech-icons/c.png" class="tech-icon" />
+                      <h4>C</h4>
+                      <p class="muted">
+                        I used C at university for a course on mathematical
+                        modelling in physics
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <h3 class="typewriter">Frameworks, libraries and supersets</h3>
@@ -441,6 +443,20 @@
                   <div class="tech-icon-con">
                     <div>
                       <img
+                        src="img/tech-icons/express-47633169.png"
+                        class="tech-icon tech-icon-right"
+                      />
+                      <h4>ExpressJS</h4>
+                      <p class="muted">
+                        I have experience building back-end apis and serving
+                        applications with ExpressJS in my personal projects and
+                        at work
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tech-icon-con">
+                    <div>
+                      <img
                         src="img/tech-icons/sk-learn.png"
                         class="tech-icon"
                       />
@@ -466,21 +482,6 @@
                       </p>
                     </div>
                   </div>
-                  <div class="tech-icon-con">
-                    <div>
-                      <img
-                        src="img/tech-icons/express-47633169.png"
-                        class="tech-icon tech-icon-right"
-                      />
-                      <h4>ExpressJS</h4>
-                      <p class="muted">
-                        I have experience building back-end apis and serving
-                        applications with ExpressJS in my personal projects and
-                        at work
-                      </p>
-                    </div>
-                  </div>
-                  <br />
                 </div>
                 <h3 class="typewriter">Version Control</h3>
                 <div class="tech-icons-flex-row">
@@ -774,7 +775,7 @@
       </div>
     </div>
     <div class="footer">
-      <p>Made by Toby Johnson, Isaac Quinton</p>
+      <p>Made by Isaac Quinton</p>
     </div>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
