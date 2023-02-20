@@ -56,6 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("tradium-btn").addEventListener("click", (event) => {
     location.href = "https://github.com/IsaacQ785/2023TAWebsite";
   });
+  document.getElementById("scan-btn").addEventListener("click", (event) => {
+    location.href = "https://github.com/IsaacQ785/SCAn";
+  });
+  document.getElementById("justsortit-btn").addEventListener("click", (event) => {
+    location.href = "https://github.com/IsaacQ785/justSortIt";
+  });
+  document.getElementById("games-btn").addEventListener("click", (event) => {
+    location.href = "https://github.com/IsaacQ785/retro-games";
+  });
   document
     .getElementById("load-grades-warwick-btn")
     .addEventListener("click", (event) => {
